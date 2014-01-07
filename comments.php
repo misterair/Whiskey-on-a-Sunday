@@ -53,20 +53,22 @@ $oddcomment = 'alt';
 		<?php else : ?>
 			<form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
 		<?php if ( $user_ID ) : ?>
-		<p>Logged in as <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="D&eacute;connect&eacute; de ce compte">D&eacute;connection &raquo;</a></p>
+		<p style="text-align:center">Connecté en tant que <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="D&eacute;connect&eacute; de ce compte">D&eacute;connection &raquo;</a></p>
 	   <?php else : ?>
-		<p><input type="text" name="author" id="author"  onFocus="javascript:this.value=''" value="Nom<?php echo $comment_author; ?>" size="43" tabindex="1" />
-		<label for="author"><small></small></label></p>
-		<p><input type="text" name="email" id="email" onFocus="javascript:this.value=''"  value="email (ne sera pas publi&eacute;)<?php echo $comment_author_email; ?>" size="43" tabindex="2" />
-		<label for="email"><small></small></label></p>
-		<p><input type="text" name="url" id="url" onFocus="javascript:this.value=''"  value="Site Web<?php echo $comment_author_url; ?>" size="43" tabindex="3" />
-		<label for="url"><small></small></label></p>
+	   <div id="commentColumn">
+		<input type="text" name="author" id="author"  onFocus="javascript:this.value=''" value="Nom<?php echo $comment_author; ?>" size="43" tabindex="1" />
+		<label for="author"><small></small></label>
+		<input type="text" name="email" id="email" onFocus="javascript:this.value=''"  value="email (ne sera pas publi&eacute;)<?php echo $comment_author_email; ?>" size="43" tabindex="2" />
+		<label for="email"><small></small></label>
+		<input type="text" name="url" id="url" onFocus="javascript:this.value=''"  value="Site Web<?php echo $comment_author_url; ?>" size="43" tabindex="3" />
+		<label for="url"><small></small></label>
+		</div>
 		<?php endif; ?>
-		<p><textarea name="comment" id="comment" cols="60" rows="10" tabindex="4" style="width:310px; height:110px"></textarea></p>
-		<p>
+		<textarea name="comment" id="comment" cols="60" rows="10" tabindex="4" style="width:310px; height:110px"></textarea>
+		
 			<input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" /><?php do_action('comment_form', $post->ID); ?>
 			<input name="submit" type="submit" id="submit" tabindex="5" value="Envoyer" />
-		</p>
+		
 		</form>
 </section>
 <div id="clear"></div>
