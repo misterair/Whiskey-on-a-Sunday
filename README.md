@@ -6,14 +6,20 @@ Un thème pour Wordpress qui se veut le plus minimal possible.
 Se concentrer sur l'essentiel pour un blog: le contenu. Aucun supperflu. Aucune sidebar, ni widget. Le tout en Reponsive Design et Flat Design.
 
 Quelques fonctions d'agrément ont été implémentés:
--Support de Logo;
--Support du menu personnalisé;
--Support des images à la Une.
+
+-support de Logo;
+
+-support du menu personnalisé;
+
+-support d'émoticons et favicons personnalisés;
+
+-support des images à la Une.
+
 
 Sans oublier la page 404 la plus dynamique qu'on puisse voir...
 
 
-![screenshot](https://github.com/misterair/FlatAndQuiet/blob/master/screenshot.png)
+![screenshot](https://raw.github.com/misterair/FlatAndQuiet/master/screenshot.png)
 
 ----------------------------------------------------------------------------*
 
@@ -23,4 +29,4 @@ Tant que vous conservez cet avertissement, vous pouvez faire ce que vous voulez 
 
 Mister aiR
 
-* ----------------------------------------------------------------------------*
+----------------------------------------------------------------------------*
