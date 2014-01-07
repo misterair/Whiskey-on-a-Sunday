@@ -13,8 +13,14 @@ Quelques fonctions d'agrément ont été implémentés:
 Sans oublier la page 404 la plus dynamique qu'on puisse voir...
 
 
+![screenshot](https://github.com/misterair/FlatAndQuiet/blob/master/screenshot.png)
+
 ----------------------------------------------------------------------------*
+
 « LICENCE BEERWARE » (Révision 42):
+
 Tant que vous conservez cet avertissement, vous pouvez faire ce que vous voulez de ce truc. Si on se rencontre un jour et que vous pensez que ce truc vaut le coup, vous pouvez me payer une bière en retour.
+
 Mister aiR
+
 * ----------------------------------------------------------------------------*
