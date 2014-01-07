@@ -54,7 +54,7 @@ white-space:pre-wrap;
 :focus {outline: 0;}
 img.wp-smiley {
 float: none;
-margin-bottom: -6px;
+margin-bottom: -0.2em;
 }
 img {
 max-width: 100%;
