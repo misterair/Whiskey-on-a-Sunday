@@ -1,6 +1,6 @@
 	<footer>
 		<div id="footerCentrage">
-			<a class="linkRSS" href="<?php bloginfo('rss2_url'); ?>">RSS</a> "Flat and Quiet", un thème propulsé par Wordpress.
+			<a class="linkRSS" href="<?php bloginfo('rss2_url'); ?>">RSS</a> "<a href="https://github.com/misterair/FlatAndQuiet">Flat and Quiet</a>", un thème propulsé par Wordpress.
 		</div>
 	</footer>
 </body>
