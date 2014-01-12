@@ -274,6 +274,12 @@ letter-spacing: 4px;
 color:#222;
 }
 .sectionCentrage a[target="blank"]:before{color:#ccc;content:"\f07B";font-family: "mfg_labs_iconsetregular";}
+blockquote {
+border-left: 8px solid #ccc;
+color:#222;
+margin: 1.5em 10px;
+display:inline-block;
+}
 ul.relatedPosts {
 display: block;
 list-style: none outside none;

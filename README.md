@@ -19,6 +19,8 @@ Quelques fonctions d'agrément ont été implémentés:
 Sans oublier la page 404 la plus dynamique qu'on puisse voir...
 
 
+(vous pouvez voir le thème en live sur: http://remitaines.com/)
+
 ![screenshot](https://raw.github.com/misterair/FlatAndQuiet/master/screenshot.png)
 
 ----------------------------------------------------------------------------*
