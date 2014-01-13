@@ -307,6 +307,10 @@ font-size:1.10em;
 text-align:center;
 display:block;
 line-height:3em;
+text-shadow:1px 1px #fff;
+background: #eee;
+box-shadow:0 1px #fff inset;
+border-top:solid 1px #ccc;
 }
 .commentLink:before{content:"\F4AC";font-family: "mfg_labs_iconsetregular";}
 
