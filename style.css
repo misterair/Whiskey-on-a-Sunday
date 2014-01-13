@@ -275,6 +275,7 @@ letter-spacing: 4px;
 color:#222;
 }
 .sectionCentrage a[target="blank"]:before{color:#ccc;content:"\f07B";font-family: "mfg_labs_iconsetregular";}
+.sectionCentrage a[target="_blank"]:before{color:#ccc;content:"\f07B";font-family: "mfg_labs_iconsetregular";}
 blockquote {
 border-left: 8px solid #ccc;
 color:#222;
@@ -322,8 +323,11 @@ display:block;
 display: inline-block;
 vertical-align: middle;
 }
-.moreLink{
-text-align:center;
+.moreLink{float:left;}
+.moreLink:before {
+content: "(\2713";
+font-family: "mfg_labs_iconsetregular";
+letter-spacing: 0.3em;
 }
 .postThumbnail{
 position:relative;
@@ -394,9 +398,11 @@ height:55px;
 }
 .comment-gravatar img{display:block}
 .commentmetadata:before{content:"\F4AC";font-family: "mfg_labs_iconsetregular";}
+.authorstyle > .commentmetadata > strong:after {content: " (auteur)";font-style: italic;}
+.authorstyle > .commentmetadata:before{content:"\2693"}
 .commentArea  >.commentmetadata{margin:8px 12px 0 74px;}
 .alt  >.commentmetadata{margin:8px 74px 0 44px;text-align:right}
-.commentArea p{margin: 6px 44px 6px 74px;}
+.commentArea p{margin: 6px 44px 6px 74px; padding-bottom:6px}
 .alt p{margin: 6px 74px 6px 44px;}
 
 #commentform {

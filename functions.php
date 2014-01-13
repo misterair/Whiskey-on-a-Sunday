@@ -89,6 +89,17 @@ function wpbeginner_numeric_posts_nav() {
 
 }
 
+function rss_post_thumbnail($content) {
+global $post;
+if(has_post_thumbnail($post->ID)) {
+$content = '<p>' . get_the_post_thumbnail($post->ID) .
+'</p>' . get_the_content();
+}
+return $content;
+}
+add_filter('the_excerpt_rss', 'rss_post_thumbnail');
+add_filter('the_content_feed', 'rss_post_thumbnail');
+
 add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size( 150, 150, true ); // Normal post thumbnails
 add_image_size( '404-post-thumbnail', 600,335, true ); // 404 thumbnail size
@@ -133,13 +144,12 @@ echo $sImgString;
 
 
 
-    add_filter( 'avatar_defaults', 'newgravatar' );
-
+add_filter( 'avatar_defaults', 'newgravatar' );
     function newgravatar ($avatar_defaults) {
     $myavatar = get_bloginfo('template_directory') . '/layout/gravatar.jpg';
     $avatar_defaults[$myavatar] = "WPBeginner";
     return $avatar_defaults;
-    }
-
+}
+    
 
 ?>

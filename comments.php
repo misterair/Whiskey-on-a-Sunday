@@ -16,7 +16,7 @@ $oddcomment = 'alt';
 
 <!-- You can start editing here. -->
 <?php foreach ($comments as $comment) : ?>
-	<section class="commentArea <?php echo $oddcomment; ?>" id="comment-<?php comment_ID() ?>">
+	<section class="commentArea <?php if ($comment->user_id == 1) $oddcomment = 'authorstyle'; echo $oddcomment; ?>"id="comment-<?php comment_ID() ?>">
 		<div class="comment-gravatar">
 			<?php if(function_exists('get_avatar')) { echo get_avatar($comment, '55'); } ?>
 		</div>

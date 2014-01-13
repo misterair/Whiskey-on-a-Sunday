@@ -14,7 +14,7 @@
 	<section>
 		<div class="sectionCentrage">
 	        <?php the_excerpt(); ?>
-	        <a class="moreLink" href="<?php the_permalink(); ?>">Lire la suite</a>
+	        <a class="moreLink" href="<?php the_permalink(); ?>">Lire la suite... )</a>
 	    </div>
 	</section>
 	<?php endforeach; ?>
