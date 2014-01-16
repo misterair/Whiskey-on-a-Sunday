@@ -282,6 +282,7 @@ color:#222;
 margin: 1.5em 10px;
 display:inline-block;
 }
+img.aligncenter{margin: 0 auto;display:block }
 ul.relatedPosts {
 display: block;
 list-style: none outside none;
