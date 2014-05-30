@@ -51,7 +51,7 @@ a:link,a:visited {color: /*#2184BD*/#D18114;text-decoration:none;}
 pre{
 border:solid 1px #ccc;
 border-radius: 4px;
-background: #DCD6CD;
+background: #E7DED1;
 box-shadow: 0px 1px #FFF;
 color:#222;
 text-shadow: 0 1px #fff;
@@ -89,7 +89,7 @@ border: 1px solid #CCC;
 box-shadow: 0px 1px #FFF;
 border-radius: 4px;
 color: #222;
-background: #DCD6CD;
+background: #E7DED1;
 min-height: 2em;
 cursor: pointer;
 text-shadow: 0 1px #fff;
@@ -275,7 +275,7 @@ position: relative;
 overflow: hidden;
 width: 100%;
 padding: 12px 0px;
-background: none repeat scroll 0% 0% #DCD6CD;
+background: none repeat scroll 0% 0% #E7DED1;
 box-shadow: 0px -1px #ccc inset, 0px 1px #ccc inset, 0px 1px #FFF;
 }
 .largeThumbnail img{
@@ -295,7 +295,7 @@ font-weight:lighter;
 height:100px;
 line-height: 100px;
 position: absolute;
-color:#eee;
+color:#F2EEE7;
 text-shadow: -1px -1px #ccc;
 transition-duration: 0.15s;
 }
@@ -377,7 +377,7 @@ border-top:solid 1px #ccc;
 }
 
 #relatedPosts{
-background:#DCD6CD;
+background:#E7DED1;
 padding: 6px 0 20px;
 box-shadow:0px -1px #ccc inset, 0px 1px #ccc inset, 0px 1px #FFF;
 }
@@ -408,7 +408,7 @@ display: block;
 height:140px;
 width:140px;
 border-radius:140px;
-box-shadow: 1px 1px #ccc,-1px -1px #ccc, 0px 2px #FFF;
+box-shadow: 1px 1px rgba(15, 15, 15, 0.18),-1px -1px rgba(15, 15, 15, 0.18), 0px 2px #FFF;
 overflow:hidden;
 background:#fff;
 margin: 0 auto;
@@ -594,7 +594,7 @@ position:relative;
 float:left;
 width:100%;
 border-top:solid 1px #ccc;
-box-shadow:0 1px #FFFFFF inset;
+box-shadow:0px -1px #ccc, 0px 4px 4px #0F0F0F inset;
 }
 #footerCentrage{
 min-width:300px;
