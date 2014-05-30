@@ -4,18 +4,18 @@
 		<?php the_post(); ?>
 		<?php $postslist = get_posts('numberposts=1&order=DESC'); foreach ($postslist as $post) : setup_postdata($post); ?>
 		<header>
-		<div id="headerCentrage">
+		</header>
+		<div id="clear"></div>
+		<section class="headerCentrage">
+			<p class="articleInfos"><?php the_category(', ') ?> | <?php the_time('j F Y') ?> par <?php the_author_posts_link(); ?></p>
 			<div class="largeThumbnail">
 				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail( '404-post-thumbnail' ); ?></a>
 			</div>
-			<h1><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>  
-		</div>
-	</header>
-	<section>
-		<div class="sectionCentrage">
-	        <?php the_excerpt(); ?>
-	        <a class="moreLink" href="<?php the_permalink(); ?>">Lire la suite... )</a>
-	    </div>
+			<div class="postContent">
+				<h1><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>  
+	        	<?php the_excerpt(); ?>
+	        	<!--<a class="moreLink" href="<?php the_permalink(); ?>">Lire la suite... )</a>-->
+	   		</div>
 	</section>
 	<?php endforeach; ?>
 <?php } ?>
@@ -25,7 +25,7 @@
 			<?php $postslist = get_posts('order=DESC&offset= 1'); ?>
 			<section id="post-<?php the_ID(); ?>" class="article">
 				<div class="postThumbnail">
-					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail();?></a>
+					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail();?></a>
 				</div>			
 				<div class="postContent">
 					<h1><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>

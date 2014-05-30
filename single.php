@@ -3,23 +3,26 @@
 <?php while(have_posts()) : the_post(); ?>
 <article>
 	<header>
-		<div id="headerCentrage">
-			<p class="articleInfos"><?php the_category(', ') ?> | <?php the_time('j F Y') ?> par <?php the_author_posts_link(); ?></p>
-			<div class="largeThumbnail">
-				<?php previous_post_link('%link', '<div class="previousArticle"></div>', TRUE); ?>
-				<?php the_post_thumbnail( '404-post-thumbnail' ); ?>
-				<?php next_post_link('%link', '<div class="nextArticle"></div>', TRUE); ?>
-			</div>
-			<h1><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>  
-		</div>
 	</header>
-	<section>
+	<div id="clear"></div>
+	<section class="headerCentrage">
+		<p class="articleInfos"><?php the_category(', ') ?> | <?php the_time('j F Y') ?> par <?php the_author_posts_link(); ?></p>
+		<div class="largeThumbnail">
+			<?php previous_post_link('%link', '<div class="previousArticle"></div>'); ?>
+			<?php the_post_thumbnail( '404-post-thumbnail' ); ?>
+			<?php next_post_link('%link', '<div class="nextArticle"></div>'); ?>
+		</div> 
 		<div class="sectionCentrage">
+			<h1><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
 			<div id="clear"></div>
 	        <?php the_content(); ?>
 	        <div id="clear"></div>
-	        <?php the_tags(' '); ?>
-	        	<ul class="relatedPosts">
+	    </div>
+	    <div class="tags">
+			<?php the_tags(' '); ?>
+	    </div>
+		<div id="relatedPosts">
+	    	 <ul class="relatedPosts">
 				<h3>Dans la même thèmatique:</h3>
 				<div id="clear"></div>
 					<?php
@@ -40,8 +43,12 @@
 							$my_query->the_post();
 					?>
 						<li class="relatedThumb">
-							<a rel="external" href="<? the_permalink()?>"><?php the_post_thumbnail('archives-post-thumbnail',array(200,120));?><br />
-							<?php the_title(); ?>
+							<a rel="external" href="<? the_permalink()?>">
+								<div class="roundIMG">
+									<?php the_post_thumbnail('archives-post-thumbnail',array(200,200));?>
+								</div>							
+								<br />
+								<?php the_title(); ?>
 							</a>
 						</li>
 					<? }
@@ -49,8 +56,7 @@
 			$post = $orig_post;
 			wp_reset_query();
 			?>
-		</ul>
-	    <div id="clear"></div>
+			</ul>
 	    </div>
 	    <a class="commentLink" href="#comment">
 	    	<?php comments_number( 'Pas encore de commentaires', 'Un commentaire', '% commentaires' ); ?>

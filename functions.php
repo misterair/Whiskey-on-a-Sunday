@@ -92,7 +92,7 @@ function wpbeginner_numeric_posts_nav() {
 function rss_post_thumbnail($content) {
 global $post;
 if(has_post_thumbnail($post->ID)) {
-$content = '<p>' . get_the_post_thumbnail($post->ID) .
+$content = '<p align="center">' . get_the_post_thumbnail($post->ID, '404-post-thumbnail') .
 '</p>' . get_the_content();
 }
 return $content;
