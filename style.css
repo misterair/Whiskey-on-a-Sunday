@@ -381,6 +381,7 @@ background:#DCD6CD;
 padding: 6px 0 20px;
 box-shadow:0px -1px #ccc inset, 0px 1px #ccc inset, 0px 1px #FFF;
 }
+img.aligncenter{margin: 0 auto;display:block }
 ul.relatedPosts {
 display: block;
 list-style: none outside none;
