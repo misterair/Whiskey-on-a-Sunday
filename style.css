@@ -71,7 +71,7 @@ max-width: 100%;
 height: auto;
 }
 
-textarea{
+textarea,input[type="text"],input[type="email"]{
 border: 1px solid #ccc;
 box-shadow: 0px 1px #fff;
 border-radius: 4px;
@@ -81,7 +81,7 @@ background: rgba(255, 255, 255, 0.28);
 padding: 4px;
 text-indent: 1em;
 }
-textarea:focus{
+textarea:focus,input[type="text"]:focus,input[type="email"]:focus{
 border: 1px solid #a1a1a1;
 }
 input[type="submit"] {
@@ -96,13 +96,14 @@ text-shadow: 0 1px #fff;
 }
 
 .screen-reader-text{display:none}
-input[type="text"],input[type="email"]{
+
+input#s{
 background: rgba(255,255,255,0.08);
 transition-duration: 0.15s;
 border: solid 1px #171717;
 box-shadow: 0 1px rgba(255,255,255,0.08);
 border-radius: 4px 0 0 4px;
-height: 2em;
+height: 1.6em;
 color:#eee;
 min-width: 208px;
 }
@@ -112,7 +113,7 @@ transition-duration: 0.15s;
 border: solid 1px #171717;
 box-shadow: 0 1px rgba(255,255,255,0.08);
 border-radius: 0  4px 4px 0;
-height: 2.3em;
+height: 2.6em;
 padding: 2px;
 margin-left: -7px;
 color: #eee;
@@ -221,7 +222,7 @@ box-shadow:-10px 0 10px #222;
 #searchform{
 display:none;
 float:left;
-padding: 14px 0;
+padding: 12px 0 0 0 ;
 position:relative
 }
 .large > #searchform{display:block}
@@ -408,7 +409,7 @@ display: block;
 height:140px;
 width:140px;
 border-radius:140px;
-box-shadow: 1px 1px rgba(15, 15, 15, 0.18),-1px -1px rgba(15, 15, 15, 0.18), 0px 2px #FFF;
+box-shadow: 1px 1px rgba(15, 15, 15, 0.18),-1px -1px , 0px 2px #FFF;
 overflow:hidden;
 background:#fff;
 margin: 0 auto;
