@@ -409,7 +409,7 @@ display: block;
 height:140px;
 width:140px;
 border-radius:140px;
-box-shadow: 1px 1px rgba(15, 15, 15, 0.18),-1px -1px , 0px 2px #FFF;
+box-shadow: 1px 1px rgba(15, 15, 15, 0.18),-1px -1px rgba(15, 15, 15, 0.18), 0px 2px #FFF;
 overflow:hidden;
 background:#fff;
 margin: 0 auto;
